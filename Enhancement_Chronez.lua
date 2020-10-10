@@ -310,14 +310,3 @@ local abilities = {
 }
 ni.bootstrap.profile("Enhancement_Chronez", queue, abilities, OnLoad, OnUnLoad);
 
-
---[[["Maelstrom Weapon"] = function()
-    if ni.unit.buffstacks("player", 51530) == 5
-    and check.combat
-    and not check.IsMounted
-    and ni.spell.available(LightningBolt) then
-			ni.spell.cast(LightningBolt, "target")
-			return true
-        end
-    end,
-	]]--
